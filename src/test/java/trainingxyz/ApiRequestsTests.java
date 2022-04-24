@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class ApiTests {
+public class ApiRequestsTests {
 
     @Test
-    public void getCategories(){
+    public void getProducts(){
         String endpoint = "http://localhost:8888/api_testing/product/read.php";
         var response = given().when().get(endpoint).then();
         response.log().body();
