@@ -58,5 +58,4 @@ public class ChallengeOne {
         var response = given().body(body).when().delete(endpoint).then();
         response.log().body();
     }
-    
 }
